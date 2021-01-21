@@ -6,4 +6,4 @@ The project creates random colors for the background
 * The second way : by their hex code.
 
 ### Source
-* I get the idea of the project from : https://www.youtube.com/watch?v=3PHXvlpOkf4 , but I write the code in my own way.
+* I get the idea of the project from : https://www.youtube.com/watch?v=3PHXvlpOkf4 , **but I write the code in my own way.**
