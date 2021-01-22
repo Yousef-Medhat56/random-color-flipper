@@ -1,3 +1,6 @@
+//JS FILE FOR CHOOSING RANDOM BACKGROUND COLOR AND WRITING ITS NAME
+
+// Adding all colors is CSS
 const colorPalette = [
     "AliceBlue",
     "AntiqueWhite",
@@ -149,15 +152,21 @@ const colorPalette = [
     "YellowGreen",
   ];
 
-const btn = document.getElementById("bkground-color-btn-js")
-const color = document.getElementById("color")
-const backGround = document.getElementById("bkground")
+//Adding Elements from the HTML file  
+const btn = document.getElementById("bkground-color-btn-js") //The button
+const color = document.getElementById("color") //The text of the color value
+const backGround = document.getElementById("bkground") //The changing background
 
+//Make the button responsive for the click
 btn.addEventListener("click" , function () {
-    //Getting random numbers between 0 and 3
-    var num = Math.floor(Math.random()*colorPalette.length);
-    console.log(num)
-    backGround.style.backgroundColor = colorPalette[num];
-    color.textContent = colorPalette[num]
-    color.style.color = colorPalette[num]
+    //Getting a random number between 0 and colorPalette.length
+    const num = Math.floor(Math.random()*colorPalette.length);
+    //The color name
+    const backGroundClr = colorPalette[num]
+    //Changing the background color
+    backGround.style.backgroundColor = backGroundClr ;
+    //Changing the value of the color name(text)
+    color.textContent = backGroundClr ;
+    //Changing the color of the color name(text)
+    color.style.color = backGroundClr ;
 })
